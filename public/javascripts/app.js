@@ -407,7 +407,7 @@ bg = new BackgroundLayer({
 //   }
 // ];
 
-orgPeeps = peeps;
+orgPeeps = window.peeps;
 
 current = null;
 
