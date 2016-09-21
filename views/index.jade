@@ -9,7 +9,7 @@ block content
 
   script.
     var json = !{JSON.stringify(data).replace(/<\//g, '<\\/')}
-    window.people = JSON.parse(json)
+    window.peeps = JSON.parse(json)
 
   script(src="framer/framer.js")
   script(src="javascripts/app.js")
