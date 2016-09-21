@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  //- h1 Test
+  //- each person in data
+  //-   h3= person.name
+  //-   h4= person.role
+  //-   img(src="#{person.img}")
+
+  script.
+    var json = !{JSON.stringify(data).replace(/<\//g, '<\\/')}
+    window.people = JSON.parse(json)
+
+  script(src="framer/framer.js")
+  script(src="javascripts/app.js")
