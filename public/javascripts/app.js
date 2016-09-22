@@ -430,7 +430,7 @@ card = new Layer({
 showNewPerson = function() {
   if (peeps.length === 0) {
     overlay.visible = true;
-    overlay.text = "Perfect score! " + point.text + "/" + peeps.length + "\n\nClick to play again";
+    overlay.text = "Perfect score! " + point.text + "/" + orgPeeps.length + "\n\nClick to play again";
     return;
   }
   card.x = -600;
@@ -490,7 +490,7 @@ input.form.addEventListener("submit", function(e) {
       return showNewPerson();
     });
   } else {
-    overlay.text = ':( \n\n' + point.text + "/" + peeps.length + "\n\n Click to play again";
+    overlay.text = ':( \n\n' + point.text + "/" + orgPeeps.length + "\n\n Click to play again";
     overlay.visible = true;
     point.text = 0;
     peeps = orgPeeps;
