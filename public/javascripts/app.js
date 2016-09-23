@@ -490,7 +490,7 @@ input.form.addEventListener("submit", function(e) {
       return showNewPerson();
     });
   } else {
-    overlay.text = ':( \n\n' + point.text + "/" + peeps.length + "\n\n Click to play again";
+    overlay.text = "It's "+current.name+"! \n\n"+point.text+"/"+peeps.length+"\n\n Click to play again";
     overlay.visible = true;
     point.text = 0;
     peeps = orgPeeps;
