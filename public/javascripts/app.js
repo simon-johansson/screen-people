@@ -451,7 +451,7 @@ showNewPerson = function() {
 };
 
 input = new Input({
-  placeholder: "Vad heter kollegan?",
+  placeholder: "Who is this?",
   placeholderColor: "grey",
   backgroundColor: "white",
   type: "text",
