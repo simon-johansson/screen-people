@@ -470,7 +470,7 @@ showNewPerson();
 input.form.addEventListener("submit", function(e) {
   var out;
   e.preventDefault();
-  if (input.value.toLowerCase() === current.name.toLowerCase() || input.value.toLowerCase() === current.name.split(' ')[0].toLowerCase()) {
+  if (input.value.toLowerCase().trim() === current.name.toLowerCase().trim() || input.value.toLowerCase().trim() === current.name.split(' ')[0].toLowerCase().trim()) {
     point.text = ++point.text;
     point.scale = 0.5;
     point.animate({
